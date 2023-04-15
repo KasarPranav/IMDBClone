@@ -1,0 +1,243 @@
+@import url(//db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember);
+@font-face {font-family: "Amazon Ember"; src: url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.eot"); src: url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.woff") format("woff"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.svg#Amazon Ember") format("svg"); }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Amazon Ember';
+    box-sizing: border-box;    
+}
+body{
+    box-sizing: border-box;
+    background-color: black;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: #161616;
+    height: 60px;
+    line-height: 60px;
+}
+
+#logo-div{
+    height: 100%;
+    width: 60px;
+    position: relative;
+    left: 10%;
+}
+
+#logo-div img{
+    height: 30px;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: auto;
+}
+
+#search-div{
+    width: 60%;
+    position: relative;
+    left: 11%;
+    
+}
+
+#search-box{
+    height: 60%;
+    width: 100%;
+    font-size: 1.2rem;
+    padding-left: 5px;
+    position: relative;
+}
+
+#searchbutton{
+    height: 80%;
+    width: 40px;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    right: 0%;
+    top: 2px;
+  }
+  
+  #searchbutton[type="submit"]:hover {
+    opacity: 1;
+  }
+  #main-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+  }
+  #favourate-list{
+    width: 25%;
+    height: 100%;
+    background-color: gray;
+  }
+  #movies-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 71%;
+    height: 100%;
+    background-color: black   
+    /* background-color: white; */
+  }
+
+  .movies{
+    height: 400px;
+    width: 250px;    
+    margin: 8px;
+    border-radius: 0px 0px 6px 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+    border-bottom: 4px solid #161616;
+    border-left: 2px solid #161616;
+    border-right: 2px solid #161616;
+  }
+
+  .movie-poster{
+    width: 100%;
+    height: 80%;
+  }
+
+  .movie-poster img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+
+  }
+
+  .movie-info{
+    font-size: large;
+    position: relative;
+    
+  }
+  .disableTextDecoration{
+    text-decoration: none;
+    
+  }
+
+  .white-color{
+    color: rgb(238, 230, 230);
+  }
+  .gray-color{
+    color: gray;
+  }
+  .yellow-color{
+    color: rgb(245, 245, 60);
+  }
+
+  .svg-img{
+    height: 1em;
+    width: 1em;
+   
+  }
+
+  .imdB{
+    font-size: 1em;
+    margin-top: 8px;
+  }
+
+  .add-To-Fav-container{
+    display: inline-block;
+    position: absolute;
+    right: 2px;
+    top: -30px;
+  }
+
+  .add-To-Fav{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    display: inline-block;
+    font-size: 1.5em;
+    /* background-color: transparent; */
+  }
+
+  .add-To-Fav:hover{
+    cursor: pointer;
+    background-color: gray;
+  }
+
+  .movie-Title{
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+    /* background-color: black; */
+  }
+
+  .movie-Title:hover{
+    text-decoration-line: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 700;
+    cursor: pointer;
+  }
+
+
+  #favourate-list{
+    height: auto;
+    width: 26%; 
+    margin-top: 8px;   
+    border-radius: 0px 0px 6px 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    background-color: black;
+    /* border-left: 1px solid #161616;  */
+  }
+ 
+  #list li {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    /* border-left: 4px solid #161616; */
+  
+  }
+  .fav-Heading{
+    padding: 10px;
+    border-bottom: 4px solid #161616;
+  }
+  .fav-list-Item{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    border-left: 4px solid #161616;
+  }
+  .fav-list-Item span{
+    margin-left: 10%;
+  }
+
+
+  .fav-Poster{
+    height: 100%;
+    width: auto;
+  }
+  .delete{
+      height: 35px;
+      padding: 5px 0px;
+      border-radius: 3px;
+      margin-right: 8px;
+      background-color: rgb(247, 84, 84);
+  }
+  .delete:hover {
+    background-color: red;
+    cursor: pointer;
+    transition: 0.5s all;
+  }
+
+  .fav-Title:hover{
+   
+        text-decoration-line: underline;
+        text-decoration-color: white;
+        text-decoration-thickness: 700;
+        cursor: pointer;
+      
+  }
+
+
+  /* Fav List  */
