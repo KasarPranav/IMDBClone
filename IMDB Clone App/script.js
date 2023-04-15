@@ -108,9 +108,6 @@ function mainApp(){
             else if(event.target.className==="movieId"){
                 window.alert('clicked');
                 const movieId = event.target.dataset.id;
-                
-               // window.imdb=movieId;
-                //fetchAdditionalInformation(movieId);
             }
         }
         function removeMovieFromFavourites(id){
@@ -255,7 +252,6 @@ function mainApp(){
             AdditionalInfo().initializeAdditionalInfo();
            
         }
-       // console.log(sessionStorage.getItem('selectedMovie'));
     }
     togglePages();
 
