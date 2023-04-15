@@ -1,6 +1,10 @@
 # IMDBClone
 Clone of IMDb app 
 
+getting started -> 
+1) Open VS studio code and open the IMDBClone Folder
+2) Open the index.html file and enable the liveserver to view the website
+
 Functionalities: 
 Search ->
 1) User can search for movies and TV shows in search input
