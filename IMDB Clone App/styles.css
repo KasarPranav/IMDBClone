@@ -127,11 +127,16 @@ header{
   .yellow-color{
     color: rgb(245, 245, 60);
   }
+  .svg-img-container{
+    display: inline-block;
+    height: 1.5em;
+    line-height: 1.5em;
+  }
 
   .svg-img{
     height: 1em;
     width: 1em;
-   
+    display: inline-block;   
   }
 
   .imdB{
@@ -161,10 +166,22 @@ header{
     background-color: gray;
   }
 
+  .added-To-Fav{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    display: inline-block;
+    font-size: 1.5em;
+    background-color: rgb(245, 245, 60);
+  }
+
   .movie-Title{
     overflow: hidden;
-    width: 90%;
-    margin: auto;
+    height: 100%;
+    width: 80%;
+    margin-left: 6px;
+    display: inline-block;
     /* background-color: black; */
   }
 
@@ -174,7 +191,21 @@ header{
     text-decoration-thickness: 700;
     cursor: pointer;
   }
+  #Empty-Fav-Message{
+    height: 50%;
+    width: 100%;
+    color: gray;
+    text-align: center;
 
+  }
+  .none-display{
+    display: none;
+  }
+  #Empty-Fav-Message p{
+    position: relative;
+    top: 10%;
+    color: gray;
+  }
 
   #favourate-list{
     height: auto;
@@ -212,10 +243,15 @@ header{
     margin-left: 10%;
   }
 
+.fav-Poster-Container{
+  height: 130px;
+  width: 70px;
 
-  .fav-Poster{
-    height: 100%;
-    width: auto;
+}
+.fav-Poster-Container img{
+  height: 130px;
+  width: 70px;
+    object-fit: fill;
   }
   .delete{
       height: 35px;
