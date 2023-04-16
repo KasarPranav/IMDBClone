@@ -1,0 +1,74 @@
+@import url(//db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember);
+@font-face {font-family: "Amazon Ember"; src: url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.eot"); src: url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.woff") format("woff"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.svg#Amazon Ember") format("svg"); }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Amazon Ember';    
+}
+body{
+    background-color: black;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+#go-back{
+    position: relative;
+    left: 100%;
+    top: 10%;
+    transform: translateX(-100%);
+    text-align: center;
+}
+#go-back a{
+    text-decoration: none;
+    color: white;
+}
+#container{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 400px;
+    width: 800px;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+.white-color{
+    color: white;
+}
+.gray-color{
+    color: gray;
+}
+#movie-Poster{
+    height: 400px;
+    width: 250px;
+    }
+
+#movie-Poster img{
+    height: 400px;
+    width: 250px;
+    object-fit: fill;
+}
+#about-movie{
+    padding: 10px;
+    margin-left: 40px;
+    text-align: justify;
+    overflow-wrap: break-word;
+}
+#about-Movie p{
+    line-break: auto;
+}
+.ratings{
+    padding-bottom: 36px;
+    font-weight: 400;
+    color: lightgray;
+}
+
+#go-back{
+    height: 30px;
+    width: 90px;
+    background-color:green;
+    line-height: 30px;
+}
