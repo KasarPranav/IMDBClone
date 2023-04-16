@@ -6,7 +6,7 @@
         const MOVIE_NOT_FOUND = "Movie not found!";
         let searchResultsArray =[];
         let API ="";
-        const popularList = `http://www.omdbapi.com/?s=Avengers&plot=full&apikey=51bfef74`;
+        const popularList = `https://www.omdbapi.com/?s=Avengers&plot=full&apikey=51bfef74`;
         //`http://www.omdbapi.com/?s=Avengers&plot=full&page=1&apikey=51bfef74`;
         let searchInput = document.getElementById("search-div");
         let movieContainer = document.getElementById("movies-container");
@@ -142,7 +142,7 @@
                 let key=input.replace(" ","+");
                 search=key;
                 if(search.length>=3){
-                    API = `http://www.omdbapi.com/?s=${search}&page=1&apikey=51bfef74`;   
+                    API = `https://www.omdbapi.com/?s=${search}&page=1&apikey=51bfef74`;   
                     fetchMovies(API);
                 }
                 
@@ -217,7 +217,7 @@
 
         async function fetchMovieDescription(){
             try{
-                let request = `http://www.omdbapi.com/?i=${imdBId}&plot=full&apikey=51bfef74`
+                let request = `https://www.omdbapi.com/?i=${imdBId}&plot=full&apikey=51bfef74`
             let response = await fetch(request);
             let data = await response.json();
             return data;
