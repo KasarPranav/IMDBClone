@@ -35,12 +35,12 @@
                 <div class="add-To-Fav-container">                
                    ${checkMovieAddedtoFavList(movie['imdbID'])}
                 </div>
-                <div class="movie-Title">
+                <div class="title-container">
                 <a class="disableTextDecoration movieId" data-href="#" onclick='mainApp().navigateToAdditionalInfoPage(this.dataset.id)' data-id="${movie['imdbID']}">
                 <div class="svg-img-container">
                 <img class="svg-img" src="Assets/icons8-star-filled-48.png" alt="">
                 </div> 
-                <div class="white-color">
+                <div  title="${movie['Title']}" class="white-color movie-Title">
                 ${movie['Title']}
                 </div>
                 </a>
