@@ -86,7 +86,7 @@
                                                 <p class="white-color fav-Title">${jsonObj['Title']}</p>
                                                 </a>
                                                 <p class="gray-color">${jsonObj['Year']}</p>
-                                                <img src="assets/delete-button-svgrepo-com.svg" class="delete" data-id="${jsonObj['imdbID']}"/>
+                                                <img src="Assets/delete-button-svgrepo-com.svg" class="delete" data-id="${jsonObj['imdbID']}"/>
                                             </span>                                    
                                         </div>
                                     </li>`                        
