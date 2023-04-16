@@ -81,8 +81,7 @@ header{
     justify-content: flex-start;
     width: 71%;
     height: 100%;
-    background-color: black   
-    /* background-color: white; */
+    background-color: black  
   }
 
   .movies{
@@ -109,9 +108,9 @@ header{
   }
 
   .movie-info{
+    width: 100%; 
     font-size: large;
     position: relative;
-    
   }
   .disableTextDecoration{
     text-decoration: none;
@@ -176,13 +175,16 @@ header{
     background-color: rgb(245, 245, 60);
   }
 
-  .movie-Title{
-    overflow: hidden;
-    height: 100%;
-    width: 80%;
+  .title-container{
     margin-left: 6px;
     display: inline-block;
-    /* background-color: black; */
+    width: inherit;
+  }
+  .movie-Title{
+    width: 80%;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;    
   }
 
   .movie-Title:hover{
@@ -274,6 +276,3 @@ header{
         cursor: pointer;
       
   }
-
-
-  /* Fav List  */
